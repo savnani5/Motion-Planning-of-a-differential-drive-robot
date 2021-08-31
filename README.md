@@ -14,7 +14,6 @@ The green contours are made using the minimum bounding area, so it considers the
 
 **Obstacles may be inflated using Minkowski Sum to compensate for the close tolerances.** 
 
-![obs course](./git_images/obstacle course3.png)
 ![obs course with contour](./git_images/obs_contour.PNG)
 
 ## Path Planning
