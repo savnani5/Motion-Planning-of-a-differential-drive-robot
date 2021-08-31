@@ -39,6 +39,7 @@ Dijkstra’s algorithm is quite an efficient algorithm to find the shortest path
 Here, we need to store the path distance of every vertex. It can be stored in an array of size v (number of vertices). Also along with the length of the shortest path, we want to get the shortest path. For this, we map each vertex to the vertex that last updated its path length. Once the algorithm is complete, we can easily backtrack from the destination vertex to the source vertex to ascertain the path. To improve the algorithm, a minimum priority queue can be used to efficiently receive the vertex with least path distance. Normally, the time-complexity of this algorithm is O(n^2), but the computational complexity with priority queue data structure is reduced to :
 
 `O((|V|+|E|)log|V|)`
+
 |V| denotes the number of nodes in the graph and |E| denotes the number of edges.
 
 ![vis graph_with_shortest_path](./git_images/vis_graph_With_shortest_path.PNG)
@@ -50,7 +51,9 @@ The inputs required for the motion of a mobile robot are the linear velocity (V)
 `V = (V_r + V_l)/2`
 
 The individual velocities, V_R and V_L, will be:
+
 `V_r = V + (L/2)w`
+
 `V_l = V - (L/2)w`
 
 The outputs, V_R and V_L, can now be used to generate the output x ̇, y ̇, ω. The actual orientation θ is fed back for error calculation, making this system a closed loop system. This error is feed into a PID controller and appropriate output is received.
