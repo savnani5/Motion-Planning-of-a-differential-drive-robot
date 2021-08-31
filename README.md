@@ -73,7 +73,7 @@ For this use-case, SciPy python module’s interpolation function is used for sp
 ## How to Run the Code
 1) In *Code_files* directory run `python obstacle_detection.py` for contour creation.
 2) In *Code_files* directory run `python visibility_graph.py` for obstacle inflation, graph generation and graph search.
-3) In *Code_files/pygame_simulation* run `pygame_sim.py` for the simulation visualization in pygame.
+3) In *Code_files/pygame_simulation* run `python pygame_sim.py` for the simulation visualization in pygame.
 
 ## Dependencies
 - numpy
