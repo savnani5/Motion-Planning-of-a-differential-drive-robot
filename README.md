@@ -48,11 +48,11 @@ Here, we need to store the path distance of every vertex. It can be stored in an
 
 ### Kinematic modelling of the Robot
 The inputs required for the motion of a mobile robot are the linear velocity (V) and the orientation θ. The rate of change of position of robot in x-direction is x ̇ and that in y-direction is y ̇ and the angular velocity are given by: 
-![V = (V_r + V_l)/2](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+`V = (V_r + V_l)/2`
 
 The individual velocities, V_R and V_L, will be:
-![V_r = V + (L/2)w](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
-![V_l = V - (L/2)w](http://www.sciweavers.org/tex2img.php?eq=1%2Bsin%28mc%5E2%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+`V_r = V + (L/2)w`
+`V_l = V - (L/2)w`
 
 The outputs, V_R and V_L, can now be used to generate the output x ̇, y ̇, ω. The actual orientation θ is fed back for error calculation, making this system a closed loop system. This error is feed into a PID controller and appropriate output is received.
 
