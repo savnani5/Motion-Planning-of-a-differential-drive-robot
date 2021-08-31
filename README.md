@@ -7,7 +7,7 @@ Objective of this project is not only to successfully track but to enhance track
 
 **For Hardware Integration and Communication Protocol refer [this repository](https://github.com/savnani5/Wireless-robot-control)** 
 
-## Contour Detection
+## Obstacle Detection
 A contour can be explained as a curve joining all the continuous points (along the boundary), having same color or intensity. The contours are a very useful tool for shape analysis and object detection and recognition. We need contour detection to separate the obstacles from the background, so that we can draw the visibility graph using the obstacle corners. Also, to account for any convexity and continuity in obstacles, we fit a 4-sided polygon to each obstacle using its extreme points, so as to simplify the construction. In below figure the green polygons surrounding the different shaped obstacles are the fitted contours. 
 
 The green contours are made using the minimum bounding area, so it considers the rotation also. The function used is cv2.minAreaRect(). It returns a Box2D structure which contains following details - (top-left corner(x, y), (width, height), angle of rotation). But to draw this rectangle, we need 4 corners of the rectangle. It is obtained by the function cv2.boxPoints().
